@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Example MP3 stream for Acoustics.
+    Remember to change the <filename /> entry below to reflect your setup.
+    Also change the server info below.
+-->
+<ezstream>
+  <servers>
+    <server>
+    <hostname>A.B.C.D</hostname>
+    <port>8000</port>
+<!-- Login user (default: "source") -->
+      <user>source</user>
+    <password>YOURPASSWORD</password>
+<tls>none</tls>
+    </server>
+  </servers>
+
+  <streams>
+    <stream>
+      <mountpoint>/str</mountpoint>
+      <format>AAC</format>
+    </stream>
+  </streams>
+
+
+
+
+    <!--
+       Indicate that <filename> contains an executable program or script,
+       which prints a single line with a filename to standard output:
+	wget -O - http://abcd.abc:8000/live_aac | ezstream -v -c minstdin-aac.xml
+
+     -->
+
+   <intakes>
+    <intake>
+      <type>stdin</type>
+    </intake>
+  </intakes>
+
+</ezstream>
+
+    <!--
+       Since the reencoding feature is enabled below, <format /> sets the
+       output format of the stream.
+     -->
+
+
+
