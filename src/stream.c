@@ -186,6 +186,16 @@ _stream_cfg_stream(struct stream *s, cfg_stream_t cfg_stream)
 			return (-1);
 		}
 		break;
+
+	case CFG_STREAM_AAC:
+		if (SHOUTERR_SUCCESS !=
+		    shout_set_format(s->shout, SHOUT_FORMAT_AAC)) {
+			log_error("%s: format_aac: %s",
+			    s->name, shout_get_error(s->shout));
+			return (-1);
+		}
+		break;
+
 	default:
 		log_error("%s: format: unsupported: %s",
 		    s->name, cfg_stream_get_format_str(cfg_stream));

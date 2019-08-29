@@ -20,6 +20,7 @@
 #define CFG_SFMT_VORBIS 	"VORBIS"
 #define CFG_SFMT_MP3		"MP3"
 #define CFG_SFMT_THEORA 	"THEORA"
+#define CFG_SFMT_AAC		"AAC"
 
 enum cfg_stream_format {
 	CFG_STREAM_INVALID = 0,
@@ -28,6 +29,7 @@ enum cfg_stream_format {
 	CFG_STREAM_THEORA,
 	CFG_STREAM_MIN = CFG_STREAM_VORBIS,
 	CFG_STREAM_MAX = CFG_STREAM_THEORA,
+        CFG_STREAM_AAC,
 };
 
 typedef struct cfg_stream *		cfg_stream_t;

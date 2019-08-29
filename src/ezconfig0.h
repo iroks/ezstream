@@ -23,6 +23,7 @@
 #define MP3_FORMAT		"MP3"
 #define VORBIS_FORMAT		"VORBIS"
 #define THEORA_FORMAT		"THEORA"
+#define AAC_FORMAT		"AAC"
 
 #define MAX_FORMAT_ENCDEC	15
 
