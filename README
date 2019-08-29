@@ -1,5 +1,9 @@
 ezstream README
 ---------------------------------------
+AAC support; see aac minstdin.xml as an example
+
+libshout with aac-support required, e.g. https://github.com/iroks/libshout (without TLS support); 
+see https://github.com/xiph/Icecast-libshout/pull/8 for more details regarding the official integration
 
 
 
